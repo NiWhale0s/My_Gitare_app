@@ -1,0 +1,121 @@
+<!-- res/layout/activity_song_details.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingLeft="10dp">
+
+    <TextView
+        android:id="@+id/detailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#00ADB5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/detailsArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:textColor="#00ADB5"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battle: "
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailsBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="agfasfasfas"
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chords: "
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailsChords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fasfasf"
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/detailsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="552dp"
+        android:layout_weight="1"
+        android:background="#393E46">
+
+        <TextView
+            android:id="@+id/detailsFullText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Text"
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toggleAutoScrollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:backgroundTint="#00ADB5"
+            android:text="Toggle Auto Scroll"
+            android:textColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/changeSpeedButton"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#00ADB5"
+            android:text="Change Speed"
+            android:textColor="#EEEEEE" />
+
+    </LinearLayout>
+
+</LinearLayout>
