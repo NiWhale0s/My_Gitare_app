@@ -1,4 +1,3 @@
-<!-- res/layout/activity_song_details.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Battle: "
+            android:text="Бой: "
             android:textColor="#EEEEEE"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -54,10 +53,9 @@
         android:orientation="horizontal">
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chords: "
+            android:text="Аккорды: "
             android:textColor="#EEEEEE"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -72,7 +70,6 @@
             android:textStyle="bold">
 
         </TextView>
-
     </LinearLayout>
 
     <ScrollView
@@ -99,23 +96,31 @@
 
         <Button
             android:id="@+id/toggleAutoScrollButton"
-            android:layout_width="wrap_content"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:backgroundTint="#00ADB5"
-            android:text="Toggle Auto Scroll"
+            android:text="Включить прокрутку"
             android:textColor="#EEEEEE" />
 
         <Button
             android:id="@+id/changeSpeedButton"
-            android:layout_width="153dp"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginLeft="10dp"
             android:backgroundTint="#00ADB5"
-            android:text="Change Speed"
+            android:text="Изменить скорость"
             android:textColor="#EEEEEE" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скорость: 1"
+        android:textColor="#EEEEEE"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
