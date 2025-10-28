@@ -16,6 +16,7 @@ class SongAdapter(private val context: Context, private val songs: List<Song>) :
 
     override fun getItemId(position: Int): Long = position.toLong()
 
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.song_item, parent, false)
 

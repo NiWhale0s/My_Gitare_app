@@ -18,7 +18,7 @@ class SongDetailsActivity : AppCompatActivity() {
 
     private var scrollSpeed = 1
     private var delay = 50L
-    private var initialDelay = 7500L // Задержка в начале (2 секунды)
+    private var initialDelay = 7500L
 
     private val runnable = object : Runnable {
         override fun run() {
